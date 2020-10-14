@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: black;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app-header{
+  display: flex;
+  justify-content: center;
+}
+/* form */
+.form-div{
+  display: flex;
+  justify-content: center;
+}
+.form-div form .input-div{
+  display: flex;
+  justify-content: center;
+}
+.form-div form .input-div input{
+  
+}
+.form-div form .input-div .button-container{
+  display: flex;
+  flex-direction: column;
+}
+/* list */
+.list-div{
+  display: flex;
+  justify-content: center;
+}
+.list-div ul{
+  width: 350px;
+}
+.list-div ul .todo-div li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.list-div ul .todo-div li .date-div{
+  margin: 0 5px;
+}
+.list-div ul .todo-div li .text-div{
+  margin: 0 5px;
+}
+.list-div ul .todo-div li .text-div p{
+  max-width: 130px;
+  word-wrap: break-word;
+}
+.list-div ul .todo-div li .btn-div{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 5px;
+  border: none;
+}
+.list-div ul .todo-div li .btn-div #delete{
+  background-color: tomato;
+}
+.list-div ul .todo-div li .btn-div .completed{
+  background-color: greenyellow;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

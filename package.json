@@ -1,6 +1,7 @@
 {
   "name": "my-todo",
   "version": "0.1.0",
+  "homepage": "http://unco0k3d.github.io/projects/myreacttodolist",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -11,6 +12,7 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
